@@ -25,6 +25,6 @@ public class StackdriverReporterFactory {
             .callOptions(CallOptions.DEFAULT.withCallCredentials(MoreCallCredentials.from(credentials)))
             .build();
 
-        return stackdriverConfiguration.builder.build();
+        return sender;
     }
 }
